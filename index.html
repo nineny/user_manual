@@ -1,0 +1,149 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ขั้นตอนการใช้งานอุปกรณ์</title>
+  <!-- เรียกใช้ Bootstrap 5 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+  <style>
+    /* ปรับขนาดรูปให้เต็มความกว้างของคอลัมน์ */
+    .step-image {
+      width: 300px;
+      height: 600px;
+      object-fit: cover;
+      border-radius: 10px; /* มุมโค้งของภาพ */
+      border: 5px solid #dddddd; /* เพิ่มกรอบเทา */
+    }
+
+    /* สร้างเส้นตารางในตารางขั้นตอน */
+    .table .borderless td,
+    .table .borderless th {
+      border: none;
+    }
+
+    /* ข้อความหัวข้อใหญ่ */
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center; /* จัดกลางข้อความ */
+    }
+
+    /* ข้อความรายละเอียด */
+    .step-description {
+      font-size: 14px;
+    }
+
+    /* ช่องสี่เหลี่ยมโค้งสีเทาอ่อน */
+    .step-box {
+      background-color: #f1f1f1;
+      border-radius: 10px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- ข้อความหัวข้อใหญ่ -->
+        <h1>วิธีการใช้งานไลน์บอท</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- สร้างคอลัมน์สำหรับตารางขั้นตอน 1-10 -->
+      <div class="col-md-6">
+        <table class="table table-striped w-auto" class="table table-bordered borderless">
+          <tbody>
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ขั้นตอนที่ 1</strong><br>
+                  <span class="step-description">เลือกเมนูในการใช้งานว่าจะเลือกการตรวจโรคเป็นโหมดใด โดยจะมีทั้งหมด 2 โหมด คือ <br>1.tumor mode(ตรวจโรคเนื้องอกในสมอง)<br>2.alzheimer mode(ตรวจโรคอัลไซเมอร์)<br></span>                
+                  <br><img src="choose mode.jpg" alt="ขั้นตอนที่ 1" class="step-image">
+                </div>              
+              </td>
+            </tr>
+            <!-- ขั้นตอนที่ 2 -->
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ขั้นตอนที่ 2</strong><br>
+                  <span class="step-description">หลังจากเลือกโหมดแล้ว แชทบอทจะตอบกลับเป็น"ชื่อโหมด ready" ดังนี้ <br>1.tumor mode ready <br>2.alzheimer mode ready<br></span>
+                  <br><img src="tumor mode.jpg" alt="ขั้นตอนที่ 2" class="step-image"><img src="alzheimer mode.jpg" alt="ขั้นตอนที่ 2" class="step-image">
+                </div>
+              </td>
+            </tr>
+            <!-- เพิ่มขั้นตอนที่ 3-10 ตามต้องการ -->
+            <!-- ขั้นตอนที่ 3 -->
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ขั้นตอนที่ 3</strong><br>
+                  <span class="step-description">เมื่อแชทบอทตอบกลับมา แสดงว่าพร้อมสำหรับการใช้งานแล้ว ให้กดเลือกรูปสมองที่จะส่งแล้วกดส่งได้เลย<br></span>
+                  <br><img src="tumor picture.jpg" alt="ขั้นตอนที่ 3" class="step-image"><img src="alzheimer picture.jpg" alt="ขั้นตอนที่ 3" class="step-image">
+                </div>
+              </td>
+            </tr>
+            <!-- ขั้นตอนที่ 4 -->
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ขั้นตอนที่ 4</strong><br>
+                  <span class="step-description">เมื่อส่งรูปภาพไปแล้ว ตัวปัญญาประดิษฐ์จะใช้เวลาซักครู่ในการวินัจฉัยโรค แล้วจึงตอบกลับมาว่าเป็นโรคหรือไม่เป็นโรคหากเป็นโรคจะบอกว่าเป็นโรคอะไร พร้อมกับส่งรูปที่ทำการตรวจแล้วออกมา โดยตัวอย่างผลลัพธ์ เช่น<br>1.tumor mode " detect notumor" คือ โหมด tumor ไม่พบเนื้องอก<br>2.tumor mode "detect glioma" คือ โหมด tumor พบเนื้องอกชนิด glioma<br>3.alzheimer mode "detect NonDemented" คือ โหมด alzheimer ไม่พบโรคอัลไซเมอร์<br>4.alzheimer mode "detect ModerateDemented" คือ โหมด alzheimer พบโรคอัลไซเมอร์ระดับกลาง<br></span>
+                  <br><img src="tumor normal.jpg" alt="ขั้นตอนที่ 2" class="step-image"><img src="tumor disease.jpg" alt="ขั้นตอนที่ 2" class="step-image"><img src="alzheimer normal.jpg" alt="ขั้นตอนที่ 2" class="step-image"><img src="alzheimer disease.jpg" alt="ขั้นตอนที่ 2" class="step-image">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <!-- ข้อความหัวข้อใหญ่ -->
+        <h1>ฟังก์ชั่นอื่นๆ</h1>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <!-- โหมดที่กำลังใช้งานอยู่ -->
+      <div class="col-md-6">
+        <table class="table table-bordered borderless">
+          <tbody>
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ข้อมูลเพิ่มเติม</strong><br>
+                  <span class="step-description">เมื่อกดที่คำสั่ง "ข้อมูลเพิ่มเติม" ตัวแชทบอทก็จะตอบกลับมาเป็นข้อความประเภทโรคต่างๆพร้อมแนบลิ้งค์สำหรับให้ไปศึกษาข้อมูลเพิ่มเติมของโรคแต่ละประเภท ตัวอย่างดังภาพ<br>1.ภาพแชทบอทตอบกลับข้อมูลเพิ่มเติม<br>2.ตัวอย่างเว็บไซต์ข้อมูลเพิ่มเติมของโรค<br></span>
+                  <br><img src="moredata.png" alt="ข้อมูลเพิ่มเติม" class="step-image"><img src="website.jpg" alt="เว็บไซต์" class="step-image">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ประวัติการวินิจฉัย</strong><br>
+                  <span class="step-description">เมื่อกดที่คำสั่ง "ประวัติการวินิจฉัย" ตัวแชทบอทจะพาผู้ใช้งานไปยังเว็บไซต์ google sheet เพื่อดูประวัติการวินิจฉัยที่บันทึกไว้<br></span>
+                  <br><img src="history.jpg" alt="ประวัติการวินิจฉัย" class="step-image">
+                </div>
+              </td>
+            </tr>
+            <!-- ผู้จัดทำ -->
+            <tr>
+              <td>
+                <div class="step-box text-center"> <!-- เพิ่มขอบเขตสำหรับช่องสี่เหลี่ยมโค้งสีเทาอ่อน -->
+                  <strong>ผู้จัดทำ</strong><br>
+                  <span class="step-description">เมื่อกดที่คำสั่ง "ผู้จัดทำ" ตัวแชทบอทจะพาผู้ใช้งานไปยังเว็บไซต์แสดงชื่อและภาพของผู้จัดทำและอาจารย์ที่ปรึกษา<br></span>
+                  <br><img src="creator.jpg" alt="ผู้จัดทำ" class="step-image">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
